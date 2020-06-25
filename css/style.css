@@ -1,0 +1,324 @@
+/* Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+/* Estilização geral da página */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Container utilizado para definir o tamanho da página */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 16px;
+}
+
+
+/* Estilização do menu ao topo da tela */
+header {
+  height: 80vh;
+}
+
+img#img-tablet {
+  position: absolute;
+  z-index: -1;
+  top: -200px;
+  right: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: hsl(228, 39%, 23%);
+  font-weight: 500;
+  margin: 15px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+header nav ul li a:hover {
+  color: hsl(227, 12%, 61%);
+}
+
+div.btn a {
+  color: white;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  padding: 10px 35px;
+  text-decoration: none;
+  box-shadow: 0px 1px 5px hsl(12, 88%, 59%);
+  transition: .2s;
+}
+
+div.btn a:hover {
+  background-color: rgb(243, 163, 143);
+}
+
+
+div#content-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div#content-header div {
+  margin-top: 100px;
+}
+
+div#content-header-texts {
+  display: flex;
+  align-items: center;
+}
+
+div#content-header-texts h2 {
+  color: hsl(228, 39%, 23%);
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  width: 70%;
+  line-height: 60px;
+}
+
+div#content-header-texts p {
+  color: hsl(227, 12%, 61%);
+  font-weight: 500;
+  margin-bottom: -50px;
+  width: 60%;
+}
+
+div#content-header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Seção de diferenças */
+section#different {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section#different div#description h2 {
+  color: hsl(228, 39%, 23%);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  width: 70%;
+  line-height: 60px;
+}
+
+section#different div#description p {
+  color: hsl(227, 12%, 61%);
+  font-weight: 500;
+  width: 60%;
+}
+
+section#different div#list div.item-list {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+
+section#different div#list div.item-list span {
+  color: white;
+  background: hsl(12, 88%, 59%);
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+section#different div#list div.item-list div.item-list-text h2 {
+  color: hsl(228, 39%, 23%);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+section#different div#list div.item-list div.item-list-text p {
+  color: hsl(227, 12%, 61%);
+  width: 80%;
+  line-height: 30px;
+}
+
+section#different img {
+  position: absolute;
+  top: 1100px;
+  left: -300px;
+  z-index: -1;
+}
+
+
+/* Seção de depoimentos */
+section#said {
+  margin-top: 100px;
+  text-align: center;
+}
+
+section#said h2 {
+  color: hsl(228, 39%, 23%);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+section#said div.item-said {
+  background-color:hsla(227, 12%, 61%, 0.123);
+  margin-bottom: 30px;
+  margin-left: 40px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+section#said div.item-said img {
+  width: 100px;
+  margin: auto
+}
+
+section#said div.item-said h3 {
+  color: hsl(228, 39%, 23%);
+  margin-bottom: 10px; 
+  font-size: 16px;
+}
+
+section#said div.item-said p {
+  color: hsl(227, 12%, 61%);
+}
+
+section#said div.btn {
+  margin-top: 30px;
+}
+
+
+/* Seção com fundo laranja */
+section#simplify {
+  margin-top: 100px;
+  background-color: hsl(12, 88%, 59%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+section#simplify div#content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#simplify div#content p {
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  width: 500px;
+}
+
+section#simplify div#content div.btn a {
+  color: hsl(12, 88%, 59%);
+  background-color: white;
+  transition: .2s;
+}
+
+section#simplify div#content div.btn a:hover {
+  color: rgb(243, 163, 143);
+}
+
+
+/* Estilização do rodapé da página */
+footer {
+  background-color: hsl(233, 12%, 13%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+footer div#content-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div#content-footer ul.social-media {
+  margin-top: 50px;
+}
+
+footer div#content-footer ul.social-media li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer div#content-footer ul.social-media li a img {
+  transition: .2s;
+}
+
+footer div#content-footer ul.social-media li a img:hover {
+  transform: scale(1.2);
+}
+
+footer div#content-footer ul.list-nav li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+footer div#content-footer ul.list-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div#content-footer ul.list-nav li a:hover {
+  color: hsl(12, 88%, 59%);
+}
+
+footer div#content-footer input {
+  color: hsl(227, 12%, 61%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+footer div#content-footer button {
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 10px 20px;
+  transition: .2s;
+}
+
+footer div#content-footer button:hover {
+  background-color: rgb(243, 163, 143);
+}
+
+footer div#content-footer p.copy {
+  color: hsl(227, 12%, 61%);
+  margin-top: 50px;
+  font-size: 14px;
+}
