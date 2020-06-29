@@ -13,7 +13,7 @@
 
 /* Container utilizado para definir o tamanho da página */
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -117,7 +117,7 @@ div#content-header-img {
 
 /* Seção de diferenças */
 section#different {
-  margin-top: 100px;
+  margin-top: 170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -321,4 +321,92 @@ footer div#content-footer p.copy {
   color: hsl(227, 12%, 61%);
   margin-top: 50px;
   font-size: 14px;
+}
+
+
+/* Estilização para dispositivos menores */
+@media screen and (max-width: 768px) {
+  /* Estilização do rodapé da página */
+  footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  footer div#content-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'form form'
+    'list1 list2'
+    'icons icons'
+    'logo logo'
+    'copy copy';
+  }
+
+  footer div#content-footer ul.social-media {
+    margin-top: 50px;
+  }
+
+  footer div#content-footer ul.social-media li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  footer div#content-footer ul.social-media li a img {
+    transition: .2s;
+  }
+
+  footer div#content-footer ul.social-media li a img:hover {
+    transform: scale(1.2);
+  }
+
+  footer div#content-footer ul.list-nav li {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+
+  footer div#content-footer ul.list-nav li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer div#content-footer ul.list-nav li a:hover {
+    color: hsl(12, 88%, 59%);
+  }
+
+  footer div#content-footer div form {
+    grid-area: form;
+  }
+
+  footer div#content-footer input {
+    color: hsl(227, 12%, 61%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+  }
+
+  footer div#content-footer button {
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 5px;
+    padding: 10px 20px;
+    transition: .2s;
+  }
+
+  footer div#content-footer button:hover {
+    background-color: rgb(243, 163, 143);
+  }
+
+  footer div#content-footer p.copy {
+    color: hsl(227, 12%, 61%);
+    margin-top: 50px;
+    font-size: 14px;
+    grid-area: copy;
+  }
 }
