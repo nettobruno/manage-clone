@@ -8,11 +8,12 @@ $('.slide').slick({
   arrows: false,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
+       infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+        slidesToScroll: 1,
+      },
+    },
   ]
 });
